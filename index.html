@@ -1,0 +1,27 @@
+<html> 
+    <head>  
+        <title>voice assistant</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <center>
+        <h1>Welcome!!</h1>
+        <h2>Walids voice assistant</h2>
+
+        <button id="init" onclick="speak();">init</button>
+
+        <div class="chat-container">
+            <form onsubmit="event.preventDefault();
+            conversationUserAdd(document.getElementById('input-text').value);
+            openai_test();">
+            <input type="text" id="input-text"/>
+            <button id="sumbit-button">Submit</button>
+        </form>
+
+            <div id="chat-container"></div>
+        </div>
+    </center>
+    </body>
+</html>
